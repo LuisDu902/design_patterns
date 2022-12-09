@@ -1,6 +1,8 @@
 package org.example;
 
-public class SmartStrategy implements OrderingStrategy{
+
+public class SmartStrategy implements OrderingStrategy {
+
     private StringOrder order;
 
     @Override
@@ -22,6 +24,7 @@ public class SmartStrategy implements OrderingStrategy{
     @Override
     public void happyHourEnded(StringBar bar) {
     }
+
     private static class StringOrder {
 
         private final StringBar bar;

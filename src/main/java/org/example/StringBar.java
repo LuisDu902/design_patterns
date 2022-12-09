@@ -16,7 +16,6 @@ public class StringBar extends Bar {
         super(observers);
     }
 
-
     @Override
     public boolean isHappyHour() {
         return isHappyHour;
@@ -25,14 +24,16 @@ public class StringBar extends Bar {
     @Override
     public void startHappyHour() {
         isHappyHour = true;
+        notifyObservers();
     }
 
     @Override
     public void endHappyHour() {
         isHappyHour = false;
+        notifyObservers();
     }
+
     public void order(StringDrink drink, StringRecipe recipe) {
         recipe.mix(drink);
     }
-
 }

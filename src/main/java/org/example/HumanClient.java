@@ -1,6 +1,7 @@
 package org.example;
 
-public class HumanClient implements Client{
+
+public class HumanClient implements Client {
 
     private OrderingStrategy strategy;
 

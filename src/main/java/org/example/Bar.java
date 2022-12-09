@@ -3,6 +3,7 @@ package org.example;
 import java.util.List;
 
 public abstract class Bar {
+
     protected List<BarObserver> observers;
 
     public Bar(List<BarObserver> observers) {
@@ -26,4 +27,5 @@ public abstract class Bar {
             if (isHappyHour()) observer.happyHourStarted(this);
             else observer.happyHourEnded(this);
     }
+
 }
