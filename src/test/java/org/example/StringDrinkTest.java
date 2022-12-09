@@ -103,4 +103,5 @@ public class StringDrinkTest {
         recipe.mix(drink);
         assertEquals("DcBx-dCbA", drink.getText());
     }
+
 }
